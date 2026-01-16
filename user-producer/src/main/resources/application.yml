@@ -25,3 +25,15 @@ spring:
       properties:
         spring.json.type.mapping: userEvent:com.userproducer.dto.UserEventDTO
         spring.json.add.type.headers: false 
+
+# SpringDoc OpenAPI Configuration
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operations-sorter: method
+    tags-sorter: alpha
+    try-it-out-enabled: true
+  cache:
+    disabled: true

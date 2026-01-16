@@ -25,5 +25,4 @@ public class UserCreateRequestDTO {
     private String password;
 
     private String phoneNumber;
- 
 }

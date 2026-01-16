@@ -1,6 +1,6 @@
 package com.userproducer.service;
 
-import com.userproducer.constans.KafkaConstants;
+import com.userproducer.constans.Constants;
 import com.userproducer.dto.UserEventDTO;
 import com.userproducer.mapper.UserMapper;
 import com.userproducer.model.User;
@@ -21,15 +21,15 @@ public class KafkaProducerService {
 	private final UserMapper userMapper;
 
 	public void sendUserCreatedEvent(User user, String performedBy, String ipAddress) {
-		sendUserEvent(user, "CREATED", performedBy, ipAddress, KafkaConstants.USER_CREATED_TOPIC);
+		sendUserEvent(user, "CREATED", performedBy, ipAddress, Constants.USER_CREATED_TOPIC);
 	}
 
 	public void sendUserUpdatedEvent(User user, String performedBy, String ipAddress) {
-		sendUserEvent(user, "UPDATED", performedBy, ipAddress, KafkaConstants.USER_UPDATED_TOPIC);
+		sendUserEvent(user, "UPDATED", performedBy, ipAddress, Constants.USER_UPDATED_TOPIC);
 	}
 
 	public void sendUserDeletedEvent(User user, String performedBy, String ipAddress) {
-		sendUserEvent(user, "DELETED", performedBy, ipAddress, KafkaConstants.USER_DELETED_TOPIC);
+		sendUserEvent(user, "DELETED", performedBy, ipAddress, Constants.USER_DELETED_TOPIC);
 	}
 
 	private void sendUserEvent(User user, String eventType, String performedBy, String ipAddress, String topic) {

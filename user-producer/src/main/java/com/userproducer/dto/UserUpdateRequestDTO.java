@@ -21,5 +21,4 @@ public class UserUpdateRequestDTO {
     private String password;
     
     private String phoneNumber;
-
 }

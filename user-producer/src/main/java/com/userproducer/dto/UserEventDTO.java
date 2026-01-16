@@ -9,6 +9,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserEventDTO {
+	
     private Long userId;
     private String username;
     private String email;

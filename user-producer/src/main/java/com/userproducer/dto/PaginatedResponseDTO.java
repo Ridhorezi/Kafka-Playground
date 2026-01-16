@@ -9,6 +9,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class PaginatedResponseDTO<T> {
+	
     private String status;
     private List<T> data;
     private PaginationInfo pagination;
