@@ -23,6 +23,9 @@ The system consists of two independent microservices:
 - **Dead Letter Topic (DLT) implementation for error handling**
 - **Kafka Topic Configuration with multiple partitions**
 - **Audit Trail Logging for all user operations**
+- **Saga Pattern**
+- **Clean Architecture**
+- **Open API Spesification**
 
 ## 🚀 How to Run
 
