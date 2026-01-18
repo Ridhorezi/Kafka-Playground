@@ -80,11 +80,6 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
-		<dependency>
-			<groupId>com.kafkaconsumer</groupId>
-			<artifactId>kafka-consumer</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
 		<!-- Jackson Core -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
